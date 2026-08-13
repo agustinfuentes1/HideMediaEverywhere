@@ -16,9 +16,7 @@ HideMediaEverywhere is a Vencord userplugin. Right-click a message or image and 
 
 ## Demo
 
-<!-- Replace this note with docs/assets/demo.gif after recording the demo. -->
-
-I will add a short demo after recording it. The shot list is in [docs/demo-guide.md](docs/demo-guide.md).
+![HideMediaEverywhere demo](docs/assets/demo.gif)
 
 ## Install
 
@@ -76,3 +74,7 @@ pnpm build
 ```
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a bug fix or change.
+
+## License
+
+HideMediaEverywhere is licensed under [GPL-3.0-or-later](LICENSE).

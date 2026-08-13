@@ -1,3 +1,9 @@
+/*
+ * HideMediaEverywhere, a Vencord userplugin
+ * Copyright (c) 2026 t6rtar
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
 import { findGroupChildrenByChildId, NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { definePluginSettings } from "@api/Settings";
 import { Button } from "@components/Button";

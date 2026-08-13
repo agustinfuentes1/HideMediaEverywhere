@@ -2,9 +2,11 @@
 
 This file tracks user-facing changes.
 
-## Unreleased
+## 1.0.0 - 2026-08-12
 
 - Rewrote the installation and support docs and added release, demo, and promotion guides.
+- Added a cropped 13.3-second feature demo.
+- Licensed the project under GPL-3.0-or-later.
 
 ## Initial development
 
