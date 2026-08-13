@@ -1,0 +1,83 @@
+name: Bug report
+description: Report a reproducible HideMediaEverywhere problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include private messages, personal media, usernames, or server details.
+  - type: input
+    id: client
+    attributes:
+      label: Client and version
+      description: Discord or Vesktop, including the version if available.
+      placeholder: Vesktop 1.x.x
+    validations:
+      required: true
+  - type: input
+    id: vencord
+    attributes:
+      label: Vencord version or commit
+      description: Paste the version or commit from the source checkout you built.
+    validations:
+      required: true
+  - type: dropdown
+    id: location
+    attributes:
+      label: Discord view
+      options:
+        - Regular chat
+        - Search results
+        - Image or media preview
+        - GIF picker
+        - Multiple places
+        - Somewhere else
+    validations:
+      required: true
+  - type: dropdown
+    id: media
+    attributes:
+      label: Media type
+      options:
+        - Image
+        - GIF
+        - Video
+        - Mixed media message
+        - Embed or link preview
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use harmless test media and list the smallest reliable sequence.
+      placeholder: |
+        1. Post a test image...
+        2. Right-click...
+        3. Open...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks completed
+      options:
+        - label: I updated and rebuilt Vencord, quit my client from its tray or taskbar icon, and reopened it.
+          required: true
+        - label: I removed private information from this report.
+          required: true
