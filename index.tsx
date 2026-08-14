@@ -1677,7 +1677,7 @@ export default definePlugin({
     tags: ["Media", "Privacy", "Utility"],
 
     start() {
-        Vencord.Api.ContextMenu.addContextMenuPatch("message", messageContextPatch);
+        Vencord.Api.ContextMenu.addContextMenuPatch(["message", "message-actions"], messageContextPatch);
         Vencord.Api.ContextMenu.addContextMenuPatch("image-context", imageContextPatch);
         document.addEventListener("contextmenu", captureMosaicContext, true);
         loadMediaHashes();
@@ -1718,7 +1718,7 @@ export default definePlugin({
     },
 
     stop() {
-        Vencord.Api.ContextMenu.removeContextMenuPatch("message", messageContextPatch);
+        Vencord.Api.ContextMenu.removeContextMenuPatch(["message", "message-actions"], messageContextPatch);
         Vencord.Api.ContextMenu.removeContextMenuPatch("image-context", imageContextPatch);
         document.removeEventListener("contextmenu", captureMosaicContext, true);
         mosaicContextTarget = null;
