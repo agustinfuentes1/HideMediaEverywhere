@@ -7,9 +7,11 @@
 import { findGroupChildrenByChildId, NavContextMenuPatchCallback } from "@api/ContextMenu";
 import { definePluginSettings } from "@api/Settings";
 import { Button } from "@components/Button";
+import { Heading } from "@components/Heading";
+import { Paragraph } from "@components/Paragraph";
 import { Devs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
-import { FluxDispatcher, Forms, Menu, MessageStore, React } from "@webpack/common";
+import { FluxDispatcher, Menu, MessageStore, React } from "@webpack/common";
 
 const HIDDEN_ATTR = "data-vc-hidden";
 const MOSAIC_ATTR = "data-vc-hidden-mosaic";
@@ -101,8 +103,8 @@ const settings = definePluginSettings({
             return (
                 <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                     <div>
-                        <Forms.FormTitle>Placeholder image</Forms.FormTitle>
-                        <Forms.FormText>Choose an image to show in place of hidden media.</Forms.FormText>
+                        <Heading>Placeholder image</Heading>
+                        <Paragraph>Choose an image to show in place of hidden media.</Paragraph>
                     </div>
                     <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
                         <Button
