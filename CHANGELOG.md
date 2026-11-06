@@ -2,6 +2,11 @@
 
 This file tracks user-facing changes.
 
+## 1.0.1 - 2026-11-06
+
+- Fixed compatibility with current Vencord by replacing removed Forms components in the placeholder image settings.
+- Build verified; full in-client regression testing is pending. Published as a prerelease.
+
 ## 1.0.0 - 2026-08-12
 
 - Rewrote the installation and support docs and added release, demo, and promotion guides.
